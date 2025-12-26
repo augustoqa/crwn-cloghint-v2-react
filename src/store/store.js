@@ -19,6 +19,6 @@ const loggerMiddleware = (store) => (next) => (action) => {
 
 export const store = configureStore({
   reducer: rootReducer,
-  // middleware: () => new Tuple(logger),
-  middleware: () => new Tuple(loggerMiddleware),
+  middleware: () => new Tuple(logger),
+  // middleware: () => new Tuple(loggerMiddleware),
 })
